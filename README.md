@@ -1,6 +1,6 @@
 # Md. Meherab Hossen — Portfolio
 
-A responsive portfolio for a mechanical engineer and CFD researcher, with a navy-and-mint design inspired by [Brittany Chiang’s v4 portfolio](https://github.com/bchiang7/v4).
+A responsive portfolio for a mechanical engineer and CFD researcher, with a warm ivory and forest green design inspired by [Brittany Chiang’s v4 portfolio](https://github.com/bchiang7/v4).
 
 **Website:** https://cfdmeherabhossen.github.io/meherab-portfolio/
 
@@ -43,4 +43,4 @@ In this repository, open Settings → Pages. Choose “Deploy from a branch”, 
 
 ## Credits
 
-The visual design, colour palette, font assets and layout direction are based on [Brittany Chiang](https://brittanychiang.com) and the v4 template supplied in the workspace. The original MIT notice is retained in LICENSE and attribution appears in the footer. Engineering content, photographs, reports and videos are retained from the original [Meherab Hossen portfolio](https://github.com/cfdmeherabhossen/meherabhossen).
+The font assets and original layout direction are based on [Brittany Chiang](https://brittanychiang.com) and the v4 template supplied in the workspace. The original MIT notice is retained in LICENSE and attribution appears in the footer. Engineering content, photographs, reports and videos are retained from the original [Meherab Hossen portfolio](https://github.com/cfdmeherabhossen/meherabhossen).
