@@ -1,133 +1,122 @@
-/* =========================================================
-   Md. Meherab Hossen — portfolio behaviour
-   No build step, no dependencies. Works on GitHub Pages.
-   ========================================================= */
-(function () {
+/* Progressive enhancements. Portfolio content remains readable without JS. */
+(() => {
   'use strict';
-
-  var pages   = Array.prototype.slice.call(document.querySelectorAll('.page'));
-  var navLinks= Array.prototype.slice.call(document.querySelectorAll('.menu a'));
-  var rail    = document.getElementById('rail');
-  var burger  = document.getElementById('burger');
-  var scrim   = document.getElementById('scrim');
-  var DEFAULT = 'home';
-
-  /* ---------- page switching ---------- */
-  function show(id, push) {
-    var target = document.getElementById(id);
-    if (!target || !target.classList.contains('page')) { id = DEFAULT; target = document.getElementById(id); }
-
-    pages.forEach(function (p) { p.classList.toggle('is-active', p === target); });
-
-    navLinks.forEach(function (a) {
-      var on = a.getAttribute('href') === '#' + id;
-      a.classList.toggle('is-current', on);
-      if (on) { a.setAttribute('aria-current', 'page'); } else { a.removeAttribute('aria-current'); }
-    });
-
-    document.title = titleFor(id);
-    if (push && location.hash !== '#' + id) { history.pushState(null, '', '#' + id); }
-    window.scrollTo(0, 0);
-  }
-
-  function titleFor(id) {
-    var link = document.querySelector('.menu a[href="#' + id + '"]');
-    var label = link ? link.textContent.trim() : '';
-    var base = 'Md. Meherab Hossen';
-    return (id === 'home' || !label) ? base + ' — Mechanical Engineering, CFD & Thermal Sciences'
-                                     : label + ' — ' + base;
-  }
-
-  document.addEventListener('click', function (e) {
-    var a = e.target.closest ? e.target.closest('a[data-page]') : null;
-    if (!a) return;
-    e.preventDefault();
-    show(a.getAttribute('data-page'), true);
-    closeRail();
+  const header = document.getElementById('site-header');
+  const menu = document.getElementById('mobile-menu');
+  const menuToggle = document.getElementById('menu-toggle');
+  const imageDialog = document.getElementById('image-dialog');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 25);
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+  menuToggle.addEventListener('click', () => {
+    menu.showModal();
+    document.body.classList.add('menu-open');
+    menuToggle.setAttribute('aria-expanded', 'true');
   });
-
-  window.addEventListener('hashchange', function () {
-    show((location.hash || '#' + DEFAULT).slice(1), false);
+  menu.addEventListener('close', () => {
+    document.body.classList.remove('menu-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
   });
-
-  show((location.hash || '#' + DEFAULT).slice(1), false);
-
-  /* ---------- mobile drawer ---------- */
-  function openRail() {
-    rail.classList.add('is-open');
-    burger.setAttribute('aria-expanded', 'true');
-    scrim.hidden = false;
-  }
-  function closeRail() {
-    rail.classList.remove('is-open');
-    burger.setAttribute('aria-expanded', 'false');
-    scrim.hidden = true;
-  }
-  burger.addEventListener('click', function () {
-    rail.classList.contains('is-open') ? closeRail() : openRail();
-  });
-  scrim.addEventListener('click', closeRail);
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeRail(); });
-
-  /* ---------- theme ---------- */
-  var themeBtn = document.getElementById('theme');
-  var label    = themeBtn.querySelector('.theme__txt');
-
-  function store(key, val) { try { localStorage.setItem(key, val); } catch (err) {} }
-  function read(key) { try { return localStorage.getItem(key); } catch (err) { return null; } }
-
-  function setTheme(mode) {
-    if (mode === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-    }
-    themeBtn.setAttribute('aria-pressed', mode === 'dark' ? 'true' : 'false');
-    label.textContent = mode === 'dark' ? 'Light' : 'Dark';
-    store('theme', mode);
-  }
-
-  var saved = read('theme');
-  if (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { saved = 'dark'; }
-  setTheme(saved === 'dark' ? 'dark' : 'light');
-
-  themeBtn.addEventListener('click', function () {
-    setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-  });
-
-  /* ---------- images that have not been added yet ---------- */
-  document.addEventListener('error', function (e) {
-    var img = e.target;
-    if (!img || img.tagName !== 'IMG') return;
-    var box = img.parentElement;
-    if (!box) return;
-    if (box.classList.contains('hero__img') || box.classList.contains('avatar') ||
-        box.classList.contains('edu__logo')) {
-      img.style.display = 'none';
-      return;
-    }
-    box.classList.add('is-missing');
-    box.setAttribute('data-hint', img.getAttribute('alt') || 'Image goes here');
-  }, true);
-
-  /* ---------- drop links that have not been filled in ---------- */
-  // Video links stay hidden until you paste a real URL over the "#".
-  Array.prototype.forEach.call(document.querySelectorAll('a[data-video]'), function (a) {
-    var href = a.getAttribute('href');
-    if (!href || href === '#') { a.remove(); }
-  });
-
-  // PDF links hide themselves until the file is actually uploaded, so a visitor
-  // never lands on a 404. Skipped when opening the page straight off disk.
-  if (location.protocol !== 'file:' && window.fetch) {
-    Array.prototype.forEach.call(document.querySelectorAll('a[data-optional]'), function (a) {
-      fetch(a.getAttribute('href'), { method: 'HEAD' })
-        .then(function (r) { if (!r.ok) a.remove(); })
-        .catch(function () { a.remove(); });
+  for (const dialog of [menu, imageDialog]) {
+    dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => {
+      if (event.target !== dialog) return;
+      const bounds = dialog.getBoundingClientRect();
+      if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
     });
   }
-
-  /* ---------- year ---------- */
-  var y = String(new Date().getFullYear());
-  Array.prototype.forEach.call(document.querySelectorAll('#year, .year'), function (el) { el.textContent = y; });
+  function openAnchor(hash, scroll = false) {
+    if (!hash || hash === '#') return null;
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); } catch { return null; }
+    const target = document.getElementById(id);
+    if (!target) return null;
+    let ancestor = target;
+    while (ancestor) {
+      if (ancestor.tagName === 'DETAILS') ancestor.open = true;
+      ancestor = ancestor.parentElement;
+    }
+    if (scroll) requestAnimationFrame(() => target.scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start' }));
+    return target;
+  }
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const hash = link.getAttribute('href');
+    const target = openAnchor(hash);
+    if (!target) return;
+    event.preventDefault();
+    if (menu.open) menu.close();
+    if (window.location.hash !== hash) history.pushState(null, '', hash);
+    openAnchor(hash, true);
+    target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  });
+  window.addEventListener('hashchange', () => openAnchor(location.hash, true));
+  window.addEventListener('popstate', () => openAnchor(location.hash || '#home', true));
+  openAnchor(location.hash, Boolean(location.hash));
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  function selectTab(tab, focus = false) {
+    for (const item of tabs) {
+      const selected = item === tab;
+      item.setAttribute('aria-selected', String(selected));
+      item.tabIndex = selected ? 0 : -1;
+      document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+    }
+    if (focus) tab.focus();
+  }
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => selectTab(tab));
+    tab.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowDown' || event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+      if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next === undefined) return;
+      event.preventDefault();
+      selectTab(tabs[next], true);
+    });
+  });
+  const tabList = document.querySelector('[role="tablist"]');
+  const mobileWidth = window.matchMedia('(max-width: 700px)');
+  const orientTabs = () => tabList.setAttribute('aria-orientation', mobileWidth.matches ? 'horizontal' : 'vertical');
+  mobileWidth.addEventListener('change', () => {
+    orientTabs();
+    if (!mobileWidth.matches && menu.open) menu.close();
+  });
+  orientTabs();
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[data-lightbox], a.film__box');
+    if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    const thumbnail = link.querySelector('img');
+    const image = imageDialog.querySelector('img');
+    image.src = link.href;
+    image.alt = thumbnail?.alt || 'Full-size research figure';
+    imageDialog.querySelector('p').textContent = image.alt;
+    imageDialog.showModal();
+    document.body.classList.add('image-open');
+  });
+  imageDialog.addEventListener('close', () => document.body.classList.remove('image-open'));
+  if ('IntersectionObserver' in window) {
+    const links = [...document.querySelectorAll('.desktop-nav a[href^="#"]')];
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        for (const link of links) {
+          if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        }
+      }
+    }, { rootMargin: '-20% 0px -65% 0px', threshold: 0 });
+    for (const id of ['home', 'about', 'experience', 'research', 'projects', 'background', 'contact']) observer.observe(document.getElementById(id));
+  }
+  for (const video of document.querySelectorAll('video')) {
+    video.addEventListener('play', () => {
+      for (const other of document.querySelectorAll('video')) if (other !== video) other.pause();
+    });
+  }
+  document.getElementById('year').textContent = new Date().getFullYear();
 })();
