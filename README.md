@@ -1,46 +1,46 @@
-# FINAL-PORTFOLIO - latest merged website
+# Md. Meherab Hossen — Portfolio
 
-Use this folder for the latest update. Your pasted edits are merged with the CV-based education and thesis information, existing images and reports, and video support. The missing closing Contact list tag is fixed.
+A responsive portfolio for a mechanical engineer and CFD researcher, with a navy-and-mint design inspired by [Brittany Chiang’s v4 portfolio](https://github.com/bchiang7/v4).
 
-## Add your video
+**Website:** https://cfdmeherabhossen.github.io/meherab-portfolio/
 
-One MP4 video is already configured with this exact filename:
+## Included
 
-    meherab.mp4
+- About, keyboard-accessible experience tabs, and featured research.
+- Complete research notes, validation figures, and seven benchmark references.
+- Two simulation videos with native playback controls.
+- Six engineering projects with their original PDF reports.
+- Education, skills, credentials, laboratory gallery, achievements, and publication status.
+- CV download, personal and work email links, GitHub, and ResearchGate.
+- Mobile navigation, image viewer, reduced-motion support, and local fonts.
 
-Copy your actual video into:
+## Preview locally
 
-    assets/videos/meherab.mp4
+Open index.html directly, or use Node.js 18 or later for a local server. No package installation is needed.
 
-Keep the spelling and lowercase extension exactly as shown. The video file was not supplied, so it is not included in this folder yet. The Videos menu will display the configured player; it can play once the actual file has been added.
+    node scripts/serve.mjs
 
-The following code is already included near the bottom of index.html:
+Open http://127.0.0.1:4173/meherab-portfolio/ in your browser. The server supports video byte-range requests.
 
-    window.PORTFOLIO_VIDEOS = [
-      {
-        type: "mp4",
-        title: "Meherab video",
-        src: "assets/videos/meherab.mp4"
-      }
-    ];
+## Verify and build
 
-You do not need to paste it again. All video styles and player code are included in index.html. Keep assets/css/style.css and assets/js/main.js, which provide the rest of the website's appearance and navigation. Do not use the separate videos.js from earlier versions.
+    node scripts/build.mjs
 
-## Publish your update
+This checks duplicate IDs, internal anchors and linked local files, then copies the static website into dist/. You may also use npm start, npm run build and npm run preview if npm is installed.
 
-1. Open FINAL-PORTFOLIO and add your meherab.mp4 file as described above.
-2. Upload index.html, the complete assets folder and .nojekyll from INSIDE FINAL-PORTFOLIO to the root of your GitHub repository. Replace matching files. README.md is optional on the website.
-3. Keep index.html at the repository root, not inside a nested FINAL-PORTFOLIO folder. Upload extracted files, not the ZIP itself.
-4. For your new account, use the repository meherabhossen3085-dotcom.github.io.
-5. If Pages is not already enabled, choose Settings > Pages > Deploy from a branch > main > / (root) > Save.
-6. After deployment, open https://cfdmeherabhossen.github.io/meherabhossen/, select Videos, and play the clip.
+## GitHub Pages
 
-This folder has not been published online. Your public email remains meherabhossen3085@gmail.com.
+In this repository, open Settings → Pages. Choose “Deploy from a branch”, then main and / (root), and save. The website uses relative asset links and works under the repository URL. Keep index.html and assets/ at the repository root. Do not upload dist/ inside another folder.
 
-## If the video does not play
+## Update your content
 
-Check that assets/videos/meherab.mp4 exists, the filename matches exactly, and the file is encoded in a format supported by your browser. Actual media playback must be checked after your file is added.
+- Edit index.html for biography, research, experience and projects.
+- Edit assets/css/style.css for the appearance.
+- Edit assets/js/main.js for navigation, tabs and the image viewer.
+- Replace the CV at assets/files/Meherab Hossen CV.pdf. The supplied PDF is retained unchanged; its older wording can be updated in the CV source separately.
+- The video filenames are case-sensitive: assets/videos/meherab.MP4 and assets/videos/meherab1.mp4.
+- Keep the research bibliography distinguishable from your own publications. The portfolio lists your manuscripts as in preparation.
 
-## CV note
+## Credits
 
-The supplied PDF is included unchanged at assets/files/Meherab_Hossen_CV.pdf. Its summary still says undergraduate and its header uses the old portfolio URL. Change undergraduate to graduate and update the URL when revising the source CV, then replace the PDF at the same location.
+The visual design, colour palette, font assets and layout direction are based on [Brittany Chiang](https://brittanychiang.com) and the v4 template supplied in the workspace. The original MIT notice is retained in LICENSE and attribution appears in the footer. Engineering content, photographs, reports and videos are retained from the original [Meherab Hossen portfolio](https://github.com/cfdmeherabhossen/meherabhossen).

@@ -1,207 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Md. Meherab Hossen — Mechanical Engineering, CFD &amp; Thermal Sciences</title>
-<meta name="description" content="Md. Meherab Hossen is a Mechanical Engineering graduate of AUST and CFD Simulation Engineer. Explore research in phase change, thermal energy storage and multiphase flow.">
-<meta name="author" content="Md. Meherab Hossen">
-
-<!-- Social preview -->
-<meta property="og:title" content="Md. Meherab Hossen — CFD &amp; Thermal Sciences">
-<meta property="og:description" content="Mechanical Engineering graduate of AUST working on CFD, phase change materials and thermal energy storage. Open to research collaboration and graduate study.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://meherabhossen3085-dotcom.github.io/assets/img/opi1.png">
-<meta property="og:image:alt" content="Portrait of Md. Meherab Hossen">
-<meta property="og:url" content="https://meherabhossen3085-dotcom.github.io/">
-<link rel="canonical" href="https://meherabhossen3085-dotcom.github.io/">
-
-<link rel="icon" href="assets/img/opi1.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<!-- Video styles -->
-<style>
-.video-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem}
-.video-card{border:1px solid var(--rule);background:var(--surface);border-radius:5px;overflow:hidden;min-width:0}
-.video-frame{aspect-ratio:16/9;background:#101b24;position:relative}
-.video-frame video,.video-frame iframe{display:block;width:100%;height:100%;border:0;object-fit:contain}
-.video-card__body{padding:1.3rem}
-.video-card__body>p{max-width:var(--measure);line-height:1.7}
-.video-card h2{font-size:1.2rem;line-height:1.3;margin:0 0 .7rem;overflow-wrap:anywhere}
-.video-card p{margin:0 0 1rem;color:var(--ink-2);overflow-wrap:anywhere}
-.video-play{position:absolute;inset:0;width:100%;border:0;padding:0;background:#101b24;color:#fff;cursor:pointer;font:500 .95rem var(--f-head)}
-.video-play img{width:100%;height:100%;object-fit:contain;opacity:.6}
-.video-play__label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:1rem;background:rgba(0,0,0,.25);text-shadow:0 1px 3px #000}
-.video-play:hover .video-play__label{background:rgba(0,0,0,.08)}
-.video-play:focus-visible{outline:3px solid #9bd3ff;outline-offset:-5px}
-.video-message{font-family:var(--f-head);font-size:.88rem}
-/* Validation pictures in the Research section */
-.validation-study{margin-top:2rem}
-.validation-study h3{font-size:1.15rem;margin-bottom:.75rem}
-.validation-study .film__box.is-missing{min-height:10rem}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a192f">
+  <title>Md. Meherab Hossen — CFD &amp; Thermal Sciences</title>
+  <meta name="description" content="Mechanical Engineering graduate of AUST and CFD Simulation Engineer at MACPROTEC. Research in multiphase flow, phase change and thermal energy storage.">
+  <meta name="author" content="Md. Meherab Hossen">
+  <meta property="og:title" content="Md. Meherab Hossen — CFD &amp; Thermal Sciences">
+  <meta property="og:description" content="Exploring the physics of flow, heat transfer and phase change through computational modelling and experimental research.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cfdmeherabhossen.github.io/meherab-portfolio/">
+  <meta property="og:image" content="https://cfdmeherabhossen.github.io/meherab-portfolio/assets/img/opi1.png">
+  <meta property="og:image:alt" content="Portrait of Md. Meherab Hossen">
+  <link rel="canonical" href="https://cfdmeherabhossen.github.io/meherab-portfolio/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Calibre-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Calibre-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
-
 <body>
-<a class="skip" href="#main">Skip to content</a>
-
-<!-- ============ MOBILE TOP BAR ============ -->
-<header class="topbar">
-  <span class="topbar__name">Md. Meherab Hossen</span>
-  <button class="burger" id="burger" aria-expanded="false" aria-controls="rail">
-    <span></span><span></span><span></span>
-    <em class="sr-only">Menu</em>
-  </button>
-</header>
-
-<!-- ============ LEFT RAIL ============ -->
-<nav class="rail" id="rail" aria-label="Sections">
-  <div class="rail__head">
-    <div class="avatar"><img src="assets/img/opi1.png" alt="Md. Meherab Hossen"></div>
-    <p class="rail__name">Md. Meherab<br>Hossen</p>
-    <p class="rail__role">CFD Simulation Engineer<br>MACPROTEC, USA · Remote</p>
-    <p class="rail__role rail__degree">B.Sc. Mechanical Engineering<br>AUST · Graduate</p>
-  </div>
-
-  <ul class="menu">
-    <li><a href="#home" data-page="home">Home</a></li>
-    <li><a href="#research" data-page="research">Research</a></li>
-    <li data-video-nav hidden><a href="#videos" data-page="videos">Videos</a></li>
-    <li><a href="#academics" data-page="academics">Education</a></li>
-    <li><a href="#publications" data-page="publications">Publications</a></li>
-    <li><a href="#skills" data-page="skills">Methods &amp; skills</a></li>
-    <li><a href="#contact" data-page="contact">Contact</a></li>
-    <li class="menu__group">
-      <details>
-        <summary>More about my work</summary>
-        <ul>
-          <li><a href="#projects" data-page="projects">Engineering projects</a></li>
-          <li><a href="#showcase" data-page="showcase">Lab gallery</a></li>
-          <li><a href="#credentials" data-page="credentials">Credentials</a></li>
-          <li><a href="#achievements" data-page="achievements">Achievements</a></li>
-        </ul>
-      </details>
-    </li>
-  </ul>
-
-  <div class="rail__foot">
-    <button class="theme" id="theme" aria-pressed="false">
-      <span class="theme__dot"></span><span class="theme__txt">Dark</span>
-    </button>
-    <p class="rail__copy">&copy; <span id="year">2026</span> Meherab Hossen</p>
-  </div>
-</nav>
-
-<div class="scrim" id="scrim" hidden></div>
-
-<!-- ============ MAIN ============ -->
-<main id="main" tabindex="-1">
-
-<!-- ---------- HOME ---------- -->
-<section class="page is-active" id="home">
-  <div class="hero">
-    <div class="hero__img"><img src="assets/img/hero-campus.jpg" alt=""></div>
-    <div class="hero__body">
-      <p class="hero__eyebrow">Computational fluid dynamics, multiphase flow &amp; thermal sciences</p>
-      <h1 class="hero__title">Md. Meherab Hossen</h1>
-      <p class="hero__sub">I use computational modelling to study phase change, thermal energy storage and heat transfer.</p>
-      <div class="scale" aria-hidden="true"></div>
-      <p class="hero__meta">Mechanical Engineering graduate, AUST<br>CFD Simulation Engineer at MACPROTEC · Remote</p>
-      <div class="hero__cta">
-        <a class="btn btn--solid" href="#research" data-page="research">Explore my research</a>
-        <a class="btn" href="assets/files/Meherab Hossen CV.pdf" data-optional download>Download CV</a>
-        <a class="btn" href="#contact" data-page="contact">Discuss collaboration</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrap">
-    <section class="block" aria-labelledby="selected-research">
-      <div class="section-heading">
-        <h2 id="selected-research">Selected research</h2>
-        <a class="doclink" href="#research" data-page="research">All research &rarr;</a>
-      </div>
-      <p class="section-intro">Numerical validation studies using ANSYS Fluent and OpenFOAM, with comparisons against published work.</p>
-      <div class="research-grid">
-        <article class="research-card">
-          <a class="research-card__image" href="#research-pcm" aria-label="Explore phase change and thermal energy storage research">
-            <img src="assets/img/sl-v.png" alt="Liquid fraction over time: present study compared with Alnakeeb et al." loading="lazy" decoding="async">
-          </a>
-          <div class="research-card__body">
-            <p class="research-card__label">Thermal energy storage · Validation study</p>
-            <h3><a href="#research-pcm">Phase change &amp; thermal energy storage</a></h3>
-            <p>Modelling the charging and discharging of solid–liquid phase change materials, with liquid-fraction comparisons against the literature.</p>
-            <a class="doclink" href="#research-pcm">View study &amp; validation &rarr;</a>
-          </div>
-        </article>
-        <article class="research-card">
-          <a class="research-card__image" href="#research-plaster" aria-label="Explore phase change materials in building plaster">
-            <img src="assets/img/ss-v.png" alt="Temperature over time: present study compared with Farulla et al." loading="lazy" decoding="async">
-          </a>
-          <div class="research-card__body">
-            <p class="research-card__label">Building energy · Validation study</p>
-            <h3><a href="#research-plaster">Phase change materials in building plaster</a></h3>
-            <p>Investigating the thermal response of plaster containing solid–solid phase change materials under different boundary conditions.</p>
-            <a class="doclink" href="#research-plaster">View study &amp; validation &rarr;</a>
-          </div>
-        </article>
-      </div>
-      <p class="research-note">Also in progress: <a href="#research-droplets">free-falling droplets and freezing using the Volume of Fluid method</a>.</p>
-      <p class="research-note">Undergraduate thesis: <a href="#research-composites">mechanical characterisation of water-lily fibre and epoxy composites</a> · July 2026 · Supervisor: Dr. Fazle Rabbi.</p>
-    </section>
-
-    <div class="about">
-      <figure class="portrait">
-        <img src="assets/img/profile.JPG" alt="Md. Meherab Hossen" width="2143" height="1980" loading="lazy" decoding="async">
-      </figure>
-      <div class="prose">
-        <h2>About me</h2>
-        <p>I graduated in Mechanical Engineering from Ahsanullah University of Science and Technology (AUST) in July 2026. I work remotely as a CFD Simulation Engineer with MACPROTEC, USA.</p>
-        <p>My research interests centre on multiphase flow, heat transfer and phase change. My current work includes numerical validation of thermal energy storage models, PCM-loaded building materials, and droplet deformation and freezing using ANSYS Fluent and OpenFOAM.</p>
-        <p>I am open to graduate study and research collaboration in fluid dynamics, thermal sciences and computational modelling. <a href="#contact" data-page="contact">Get in touch</a> to discuss research interests and potential projects.</p>
-      </div>
-    </div>
-
-    <section class="block">
-      <h2 class="block__title">Current work</h2>
-      <ol class="log">
-        <li>
-          <span class="log__year">2026</span>
-          <div>
-            <p>Simulating free-falling droplets and freezing using the Volume of Fluid method in ANSYS Fluent and OpenFOAM.</p>
-            <p>Validating numerical models of solid–liquid and solid–solid phase change materials against published studies.</p>
-            <p>Conducting experimental and numerical work on composite materials.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <section class="block">
-      <h2 class="block__title">Focus areas</h2>
-      <ul class="tags">
-        <li>Computational fluid dynamics</li>
-        <li>Conjugate heat transfer</li>
-        <li>Phase change materials</li>
-        <li>Thermal energy storage</li>
-        <li>Multiphase &amp; boiling flows</li>
-        <li>Composite materials</li>
-        <li>Machine learning for engineering</li>
-      </ul>
-    </section>
-  </div>
-</section>
-
-<!-- ---------- ACADEMICS ---------- -->
-<section class="page" id="academics">
-  <header class="banner">
-    <h1>Education</h1>
-    <div class="scale" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <a class="logo" href="#home" aria-label="Meherab Hossen — home"><svg viewBox="0 0 48 54" aria-hidden="true"><path d="M24 2 46 14.5v25L24 52 2 39.5v-25Z"/><text x="24" y="35" text-anchor="middle">M</text></svg></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#about"><span>01.</span> About</a><a href="#experience"><span>02.</span> Experience</a><a href="#research"><span>03.</span> Research</a><a href="#contact"><span>04.</span> Contact</a><a class="button button-small" href="assets/files/Meherab%20Hossen%20CV.pdf" target="_blank" rel="noopener">Resume</a></nav>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
+  <dialog class="mobile-menu" id="mobile-menu" aria-label="Navigation">
+    <button class="dialog-close" type="button" data-close aria-label="Close navigation">×</button>
+    <nav aria-label="Mobile navigation"><a href="#about"><span>01.</span> About</a><a href="#experience"><span>02.</span> Experience</a><a href="#research"><span>03.</span> Research</a><a href="#contact"><span>04.</span> Contact</a><a class="button button-small" href="assets/files/Meherab%20Hossen%20CV.pdf" target="_blank" rel="noopener">Resume</a></nav>
+  </dialog>
+  <aside class="social-rail" aria-label="Social links">
+    <a href="https://github.com/cfdmeherabhossen" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.4c0-1 .1-1.4-.5-2 3-.3 6.1-1.5 6.1-6.7A5.2 5.2 0 0 0 19.2 6a4.8 4.8 0 0 0-.1-3.9S18 1.8 15 3.6a13.4 13.4 0 0 0-7 0C5 1.8 3.9 2.1 3.9 2.1A4.8 4.8 0 0 0 3.8 6a5.2 5.2 0 0 0-1.4 3.9c0 5.2 3.1 6.4 6.1 6.7-.5.5-.5 1-.5 2V22"/></svg></a>
+    <a href="https://www.researchgate.net/profile/Md-Meherab-Hossen" target="_blank" rel="noopener" aria-label="ResearchGate"><span class="researchgate">R<sup>G</sup></span></a>
+    <a href="mailto:meherabhossen3085@gmail.com" aria-label="Email Meherab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>
+  </aside>
+  <aside class="email-rail" aria-label="Email"><a href="mailto:meherabhossen3085@gmail.com">meherabhossen3085@gmail.com</a></aside>
 
-  <div class="wrap">
-    <ol class="edu">
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <p class="hero-eyebrow">Hi, my name is</p>
+      <h1 id="hero-title">Md. Meherab Hossen.</h1>
+      <h2>I model the physics of flow.</h2>
+      <p class="hero-description">I’m a mechanical engineer exploring <a href="#research">fluid dynamics, heat transfer &amp; phase change</a> through computational modelling. Currently, I work remotely as a CFD Simulation Engineer at <a href="#experience">MACPROTEC</a>.</p>
+      <div class="hero-actions"><a class="button" href="#research">Explore my research</a><a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line" aria-hidden="true"></span>Scroll to explore</a>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <h2 class="numbered-heading" id="about-title"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>Hello! I’m Meherab, a mechanical engineer based in Dhaka, Bangladesh. I’m curious about the physics behind everyday flows, and I use simulation to understand how fluids move, heat travels, and materials change phase.</p>
+          <p>I graduated from <a href="#academics">Ahsanullah University of Science and Technology (AUST)</a> in July 2026. Alongside my work at MACPROTEC, my research explores thermal energy storage, PCM-loaded building materials, and droplet deformation and freezing.</p>
+          <p>I’m open to <a href="#contact">graduate study and research collaboration</a> in fluid dynamics, thermal sciences and computational modelling.</p>
+          <p>Some of the tools I work with:</p>
+          <ul class="skills-list"><li>ANSYS Fluent</li><li>OpenFOAM</li><li>SolidWorks</li><li>MATLAB</li><li>ParaView &amp; Tecplot</li><li>Python <span class="muted">(learning)</span></li></ul>
+        </div>
+        <figure class="portrait"><div class="portrait-frame"><img src="assets/img/profile.JPG" width="2143" height="1980" alt="Portrait of Md. Meherab Hossen" loading="lazy" decoding="async"></div><figcaption>Mechanical engineer. Always curious.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <h2 class="numbered-heading" id="experience-title"><span>02.</span> Where I’ve Worked &amp; Learned</h2>
+      <div class="experience-grid">
+        <div class="experience-tabs" role="tablist" aria-label="Experience" aria-orientation="vertical">
+          <button id="tab-macprotec" role="tab" aria-selected="true" aria-controls="panel-macprotec" tabindex="0">MACPROTEC</button>
+          <button id="tab-aust" role="tab" aria-selected="false" aria-controls="panel-aust" tabindex="-1">AUST</button>
+          <button id="tab-bitac" role="tab" aria-selected="false" aria-controls="panel-bitac" tabindex="-1">BITAC</button>
+        </div>
+        <div class="experience-panels">
+          <div id="panel-macprotec" class="experience-panel" role="tabpanel" aria-labelledby="tab-macprotec" tabindex="0">
+            <h3>CFD Simulation Engineer <span>@ MACPROTEC</span></h3><p class="experience-date">Current role · USA · Remote</p>
+            <ul class="arrow-list"><li>Work remotely on computational fluid dynamics and engineering simulation.</li><li>Use numerical modelling to investigate fluid flow and heat transfer.</li><li>Apply CAD and CAE workflows, including preparing geometry for engineering analysis.</li></ul>
+          </div>
+          <div id="panel-aust" class="experience-panel" role="tabpanel" aria-labelledby="tab-aust" tabindex="0" hidden>
+            <h3>Mechanical Engineering <span>@ AUST</span></h3><p class="experience-date">April 2022 – July 2026 · B.Sc.</p>
+            <ul class="arrow-list"><li>Studied thermal sciences, fluid mechanics and computational fluid dynamics.</li><li>Investigated water-lily natural fibres and epoxy composites for my undergraduate thesis, supervised by Dr. Fazle Rabbi.</li><li>Combined fibre extraction, composite fabrication and mechanical testing in a three-member research team.</li></ul><a class="inline-link" href="#research-composites">Explore my thesis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+          <div id="panel-bitac" class="experience-panel" role="tabpanel" aria-labelledby="tab-bitac" tabindex="0" hidden>
+            <h3>Industrial Attachment <span>@ BITAC</span></h3><p class="experience-date">March 2024 · Team leader</p>
+            <ul class="arrow-list"><li>Completed the industrial attachment training programme at the Bangladesh Industrial Technical Assistance Centre.</li><li>Gained hands-on exposure to heat treatment, CNC machining, lathe operation, moulding and casting.</li><li>Served as team leader, developing coordination and technical decision-making skills.</li></ul><a class="inline-link" href="assets/files/bitac-report.pdf" target="_blank" rel="noopener">Read the training report <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research" id="research" aria-labelledby="research-title">
+      <h2 class="numbered-heading" id="research-title"><span>03.</span> Some Things I’ve Investigated</h2>
+      <article class="featured-project">
+        <a class="featured-image" href="#research-pcm" aria-label="Read the phase change research and validation"><img src="assets/img/sl-v.png" width="1000" height="700" alt="Liquid fraction evolution compared with the published phase change benchmark" loading="lazy" decoding="async"></a>
+        <div class="featured-content"><p class="eyebrow">Featured Research / 01</p><h3><a href="#research-pcm">Phase change &amp;<br>thermal energy storage</a></h3><div class="featured-description"><p>Understanding how phase change materials store and release thermal energy. Numerical models of charging and discharging are compared against published benchmarks to study heat transfer and liquid-fraction evolution.</p></div><ul class="technology-list"><li>ANSYS Fluent</li><li>PCM</li><li>Heat transfer</li><li>Validation</li></ul><a class="featured-link" href="#research-pcm" aria-label="Read phase change research notes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
+      </article>
+      <article class="featured-project featured-reverse">
+        <a class="featured-image" href="#research-droplets" aria-label="Read the droplet dynamics research"><img src="assets/img/validation-ref5.png" width="1000" height="700" alt="Simulation and benchmark comparison of paired droplets impacting a surface" loading="lazy" decoding="async"></a>
+        <div class="featured-content"><p class="eyebrow">Featured Research / 02</p><h3><a href="#research-droplets">A closer look at<br>droplet dynamics</a></h3><div class="featured-description"><p>Tracking deformation, impact and freezing of droplets with the Volume of Fluid method. This ongoing work compares numerical results with published studies of falling droplets and simultaneous droplet-pair impact.</p></div><ul class="technology-list"><li>OpenFOAM</li><li>ANSYS Fluent</li><li>VOF</li><li>Multiphase flow</li></ul><a class="featured-link" href="#research-droplets" aria-label="Read droplet dynamics research notes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
+      </article>
+      <article class="featured-project">
+        <a class="featured-image thesis-image" href="#research-composites" aria-label="Read the natural fibre composite thesis"><img src="assets/img/a3.png" width="900" height="700" alt="Laboratory tensile testing of a natural fibre specimen" loading="lazy" decoding="async"></a>
+        <div class="featured-content"><p class="eyebrow">Undergraduate Thesis / July 2026</p><h3><a href="#research-composites">Natural fibres.<br>Engineering possibilities.</a></h3><div class="featured-description"><p>Investigating water-lily fibre as a sustainable reinforcement for epoxy composites. From natural retting and fibre treatment to fabrication, mechanical testing and microscopic examination.</p></div><ul class="technology-list"><li>Composite materials</li><li>Mechanical testing</li><li>SEM</li></ul><a class="featured-link" href="#research-composites" aria-label="Read the natural fibre thesis notes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
+      </article>
+      <details class="research-details" id="research-details"><summary><span>Research notes &amp; benchmark literature</span><span class="plus" aria-hidden="true">+</span></summary><div class="detail-content"><p class="lead">Numerical studies in thermal energy storage, building energy and multiphase heat transfer using ANSYS Fluent and OpenFOAM, alongside experimental work on natural-fibre composites. The numerical studies include model validation against published research.</p>
+
+    <article class="work" id="research-pcm">
+      <p class="work__spec">Thermal energy storage · Numerical validation</p>
+      <h3>Modelling solid–liquid phase change for thermal energy storage</h3>
+      <p><strong>Research focus:</strong> The thermal behaviour of phase change materials during charging and discharging, and the effect of model parameters on heat transfer.</p>
+      <ul class="ticks">
+        <li><strong>Approach:</strong> CFD modelling of charging and discharging, with parametric analysis of heat transfer.</li>
+        <li><strong>Validation:</strong> Comparison of the predicted liquid fraction over time with Alnakeeb et al. <a href="#ref-1">[1]</a>.</li>
+        <li><strong>Related benchmark:</strong> Consecutive charging and discharging with modified longitudinal fins <a href="#ref-2">[2]</a>.</li>
+      </ul>
+      <figure class="film research-figure">
+        <a class="film__box" href="assets/img/sl-v.png" target="_blank" rel="noopener" aria-label="Open full-size liquid fraction validation plot">
+          <img src="assets/img/sl-v.png" alt="Liquid fraction against time, present study compared with Alnakeeb et al." loading="lazy" decoding="async">
+        </a>
+        <figcaption>Figure 1. Liquid-fraction evolution compared with Alnakeeb et al. <a href="#ref-1">[1]</a>. Select the plot to inspect it at full size.</figcaption>
+      </figure>
+    </article>
+    <article class="work" id="research-plaster">
+      <p class="work__spec">Building energy · Numerical validation</p>
+      <h3>Solid–solid phase change materials in building plaster</h3>
+      <p><strong>Research focus:</strong> The thermal response and energy-saving potential of plaster containing solid–solid phase change materials.</p>
+      <ul class="ticks">
+        <li><strong>Approach:</strong> Heat transfer simulations of composite PCM-loaded plaster under varying boundary conditions.</li>
+        <li><strong>Validation:</strong> Comparison of the predicted temperature history with the study by Farulla et al. <a href="#ref-3">[3]</a>.</li>
+      </ul>
+      <figure class="film research-figure">
+        <a class="film__box" href="assets/img/ss-v.png" target="_blank" rel="noopener" aria-label="Open full-size temperature validation plot">
+          <img src="assets/img/ss-v.png" alt="Temperature against time, present study compared with Farulla et al." loading="lazy" decoding="async">
+        </a>
+        <figcaption>Figure 2. Temperature history compared with Farulla et al. <a href="#ref-3">[3]</a>. Select the plot to inspect it at full size.</figcaption>
+      </figure>
+    </article>
+
+    <article class="work" id="research-droplets">
+      <p class="work__spec">Multiphase flow · Work in progress · ANSYS Fluent &amp; OpenFOAM</p>
+      <h3>Free-falling droplets and freezing</h3>
+      <p><strong>Research focus:</strong> Droplet deformation and heat transfer during free fall, impact and freezing.</p>
+      <ul class="ticks">
+        <li><strong>Approach:</strong> Volume of Fluid simulations to track droplet shape and investigate thermal behaviour.</li>
+        <li><strong>Reference studies:</strong> Falling-droplet deformation <a href="#ref-4">[4]</a>, paired-droplet impact <a href="#ref-5">[5]</a>, and impact with freezing <a href="#ref-6">[6]</a>.</li>
+      </ul>
+
+      <!-- Validation picture: reference [4] -->
+      <section class="validation-study" aria-labelledby="validation-ref4-heading">
+        <h3 id="validation-ref4-heading">Falling-droplet deformation and collision</h3>
+        <p>This figure compares my numerical results with <cite>Two-dimensional analogies to the deformation characteristics of a falling droplet and its collision</cite> by A. H. Rafi, M. R. Haque and D. H. Ahmed (2022) <a href="#ref-4">[4]</a>. The comparison is used to assess the simulation's representation of droplet deformation and collision behaviour.</p>
+        <figure class="film research-figure">
+          <a class="film__box" href="assets/img/validation-ref4.png" target="_blank" rel="noopener" aria-label="Open full-size validation picture for reference 4">
+            <img src="assets/img/validation-ref4.png" alt="Numerical droplet deformation and collision results compared with Rafi et al., reference 4" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Figure 3. Droplet deformation and collision: comparison with Rafi et al. <a href="#ref-4">[4]</a>. Select the image to inspect it at full size.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Validation picture: reference [5] -->
+      <section class="validation-study" aria-labelledby="validation-ref5-heading">
+        <h3 id="validation-ref5-heading">Simultaneous droplet-pair impact</h3>
+        <p>This figure compares my numerical results with <cite>Simultaneous impact of droplet pairs on solid surfaces</cite> by A. Goswami and Y. Hardalupas (2023) <a href="#ref-5">[5]</a>. The reference study provides a benchmark for assessing droplet-pair impact and the resulting deformation on a solid surface.</p>
+        <figure class="film research-figure">
+          <a class="film__box" href="assets/img/validation-ref5.png" target="_blank" rel="noopener" aria-label="Open full-size validation picture for reference 5">
+            <img src="assets/img/validation-ref5.png" alt="Numerical droplet-pair impact results compared with Goswami and Hardalupas, reference 5" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Figure 4. Simultaneous droplet-pair impact: comparison with Goswami and Hardalupas <a href="#ref-5">[5]</a>. Select the image to inspect it at full size.</figcaption>
+        </figure>
+      </section>
+    </article>
+<article class="work" id="research-inclined-pcm">
+      <p class="work__spec">Thermal energy storage · Numerical validation</p>
+      <h3>Modelling solid–liquid phase change for thermal energy storage</h3>
+      <p><strong>Research focus:</strong> The thermal behaviour of phase change materials during charging and discharging, and the effect of model parameters on heat transfer.</p>
+      <ul class="ticks">
+        <li><strong>Approach:</strong> Transient CFD simulation using a
+      2D axisymmetric domain, the solidification and melting model,
+      and the Boussinesq approximation in ANSYS Fluent.</li>
+
+    <li><strong>Benchmark comparison:</strong> Comparison of the
+      volume-averaged PCM liquid fraction over time with Figure 4
+      of Al Siyabi et al. <a href="#ref-7">[7]</a>.</li>
+
+    <li><strong>Current results:</strong> The available simulation
+      results show a similar melting trend to the published curve.
+      Assessment of the complete melting history and numerical
+      sensitivity remains ongoing.</li>
+      </ul>
+      <figure class="film research-figure">
+        <a class="film__box" href="assets/img/k1.png" target="_blank" rel="noopener" aria-label="Open full-size liquid fraction validation plot">
+          <img src="assets/img/k1.png" alt="Liquid fraction against time, present study compared with I. Al Siyabi et al." loading="lazy" decoding="async">
+        </a>
+        <figcaption>Figure 5. Liquid-fraction evolution compared with I. Al Siyabi et al. <a href="#ref-7">[7]</a>. Select the plot to inspect it at full size.</figcaption>
+      </figure>
+    </article>
+    <article class="work" id="research-composites">
+      <p class="work__spec">Undergraduate thesis · Experimental research · Completed July 2026</p>
+      <h3>Water-lily natural fibre and epoxy composites</h3>
+      <p><strong>Thesis:</strong> Experimental Characterization of Nymphaea Rubra (Water Lily) Natural Fiber and Its Epoxy Composite through Mechanical Analysis.</p>
+      <p class="work__team">AUST · Supervisor: Dr. Fazle Rabbi · Three-member research team</p>
+      <p><strong>Research focus:</strong> Water-lily natural fibre as a sustainable reinforcement for epoxy-based polymer composites.</p>
+      <ul class="ticks">
+        <li><strong>Extraction:</strong> Compared 48-hour and 72-hour natural retting, with and without 6% NaOH treatment.</li>
+        <li><strong>Methods:</strong> Single-fibre tensile testing, hand lay-up fabrication, laser-cut specimens, and tensile, flexural, Charpy impact and Brinell hardness tests, with SEM examination.</li>
+        <li><strong>Reported results:</strong> Identified 48-hour natural retting as the most effective extraction condition among those studied. Average composite tensile strength was 25.5 ± 2 MPa, elastic modulus 3.2 ± 0.29 GPa, and flexural strength 22 ± 5.5 MPa.</li>
+      </ul>
+      <a class="doclink" href="#showcase" data-page="showcase">View laboratory photographs &rarr;</a>
+    </article>
+  <h3 class="block__title">Reference literature for numerical studies</h3>
+  <p class="section-intro">Published studies used as benchmarks and background for the work above.</p>
+  <ol class="pubs">
+    <li id="ref-1">
+      <p class="pub__title">Eccentricity optimization of an inner flat-tube double-pipe latent-heat thermal energy storage unit</p>
+      <p class="pub__meta">M.A. Alnakeeb, M.A. Abdel Salam, M.A. Hassab · Case Studies in Thermal Engineering 25 (2021), 100969.</p>
+      <a class="doclink" href="https://doi.org/10.1016/j.csite.2021.100969" target="_blank" rel="noopener">View on publisher site</a>
+    </li>
+    <li id="ref-2">
+      <p class="pub__title">Numerical investigation on consecutive charging and discharging of PCM with modified longitudinal fins in shell and tube thermal energy storage</p>
+      <p class="pub__meta">M.K. Fahad, N.F. Ifraj, M.R. Haque, N.M. Chowdhury, F.-T. Zohora, Results in Engineering 24 (2024) 103577.</p>
+      <a class="doclink" href="https://doi.org/10.1016/j.rineng.2024.103577" target="_blank" rel="noopener">View on publisher site</a>
+    </li>
+    <li id="ref-3">
+      <p class="pub__title">Experiments and Modeling of Solid–Solid Phase Change Material-Loaded Plaster to Enhance Building Energy Efficiency</p>
+      <p class="pub__meta">G.A. Farulla, V. Brancato, V. Palomba, Y. Zhang, G.E. Dino, A. Frazzica, Energies 16 (5) (2023) 2384. </p>
+      <a class="doclink" href="https://doi.org/10.3390/en16052384" target="_blank" rel="noopener">View on publisher site</a>
+    </li>
+    <li id="ref-4">
+      <p class="pub__title">Two-dimensional analogies to the deformation characteristics of a falling droplet and its collision</p>
+      <p class="pub__meta">A. H. Rafi, M. R. Haque, and D. H. Ahmed, Archive of Mechanical Engineering, vol. 69, no. 1, pp. 21–43, 2022,</p>
+      <a class="doclink" href="https://doi.org/10.24425/AME.2021.139649" target="_blank" rel="noopener">View on publisher site</a>
+    </li>
+    <li id="ref-5">
+      <p class="pub__title">Simultaneous impact of droplet pairs on solid surfaces,</p>
+      <p class="pub__meta">A. Goswami and Y. Hardalupas, Journal of Fluid Mechanics, vol. 961, Apr. 2023</p>
+      <a class="doclink" href="https://doi.org/10.1017/JFM.2023.249" target="_blank" rel="noopener">View on publisher site</a>
+    </li>
+    <li id="ref-6">
+      <p class="pub__title">Impacting-freezing dynamics of a supercooled water droplet on a cold surface: Rebound and adhesion</p>
+      <p class="pub__meta">X. Zhang, X. Liu, X. Wu, and J. Min, International Journal of Heat and Mass Transfer, vol. 158, p. 119997, Sep. 2020, </p>
+      <a class="doclink" href="https://doi.org/10.1016/J.IJHEATMASSTRANSFER.2020.119997" target="_blank" rel="noopener">View on publisher site</a>
+    </li>
+    <li id="ref-7"> 
+      <p class="pub__title">An experimental and numerical study on the effect of inclination angle of phase change materials thermal energy storage system</p>
+      <p class="pub__meta">I. Al Siyabi, S. Khanna, T. Mallick and S. Sundaram.
+    Journal of Energy Storage, 23 (2019), 57–68.</p>
+      <a class="doclink" href="https://doi.org/10.1016/j.est.2019.03.010"
+     target="_blank" rel="noopener">View on publisher site</a>
+    </li>
+  </ol></div></details>
+
+      <div class="videos" id="videos"><div class="subsection-heading"><h3>Simulations in motion</h3><span>From my numerical validation work</span></div>
+        <div class="video-grid">
+          <figure class="video-card"><video controls playsinline preload="none" poster="assets/img/validation-ref5.png" aria-label="Simulation of simultaneous droplet-pair impact"><source src="assets/videos/meherab.MP4" type="video/mp4">Your browser does not support this video. <a href="assets/videos/meherab.MP4">Download the simulation</a>.</video><figcaption><span class="eyebrow">Droplet-pair impact</span><p>Simultaneous impact on a solid surface.</p><a href="#ref-5">Benchmark: Goswami &amp; Hardalupas (2023) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></figcaption></figure>
+          <figure class="video-card"><video controls playsinline preload="none" poster="assets/img/validation-ref4.png" aria-label="Simulation of falling droplet deformation and collision"><source src="assets/videos/meherab1.mp4" type="video/mp4">Your browser does not support this video. <a href="assets/videos/meherab1.mp4">Download the simulation</a>.</video><figcaption><span class="eyebrow">Deformation &amp; collision</span><p>Following the dynamics of a falling droplet.</p><a href="#ref-4">Benchmark: Rafi et al. (2022) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title"><h2 id="projects-title">Other Things I’ve Engineered</h2><p class="section-subtitle">From the classroom to the workshop.</p><div class="project-grid"><article class="project-card"><div class="project-card-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/></svg><a href="assets/files/gear-train.pdf" target="_blank" rel="noopener" aria-label="Open report: Gear train for a rotary screw compressor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><h3><a href="assets/files/gear-train.pdf" target="_blank" rel="noopener">Gear train for a rotary screw compressor</a></h3>
+      
+      <p class="work__spec"><b>ME 3201</b> Machine Design &nbsp;·&nbsp; ANSYS Workbench 2021 R2, Autodesk Inventor, SolidWorks</p>
+      <p>Designed and analysed the gear train driving a rotary screw compressor, from ratio selection and tooth geometry through to stress checks on the loaded members.</p>
+      
+    <a class="project-report" href="assets/files/gear-train.pdf" target="_blank" rel="noopener">Read the report <span aria-hidden="true">↗</span></a></article>
+<article class="project-card"><div class="project-card-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/></svg><a href="assets/files/belt-drive.pdf" target="_blank" rel="noopener" aria-label="Open report: Belt drive for the starter motor of a car engine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><h3><a href="assets/files/belt-drive.pdf" target="_blank" rel="noopener">Belt drive for the starter motor of a car engine</a></h3>
+      
+      <p class="work__spec"><b>ME 3202</b> Machine Design Sessional &nbsp;·&nbsp; ANSYS Workbench 2021 R2, SolidWorks</p>
+      <p>Sized a belt drive for a starter motor, covering pulley geometry, belt selection, tension and power transmission, with CAD and FEA support.</p>
+      <p class="work__team">With Jubaida Hossain Basoti, Eyaman Islam and Rakibul Hasan Shawon. Supervised by Mr. Nasim Mia, Lecturer, Department of Mechanical and Production Engineering.</p>
+      
+    <a class="project-report" href="assets/files/belt-drive.pdf" target="_blank" rel="noopener">Read the report <span aria-hidden="true">↗</span></a></article>
+<article class="project-card"><div class="project-card-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/></svg><a href="assets/files/water-quality-report.pdf" target="_blank" rel="noopener" aria-label="Open report: Real-time water quality monitoring system"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><h3><a href="assets/files/water-quality-report.pdf" target="_blank" rel="noopener">Real-time water quality monitoring system</a></h3>
+      
+      <p class="work__spec"><b>ME 3110</b> Instrumentation &amp; Measurement Sessional &nbsp;·&nbsp; Arduino IDE, SolidWorks</p>
+      <p>Built an Arduino Uno system with pH, turbidity, TDS and temperature sensors to judge water safety for drinking, agriculture and environmental use. The build handled automated data collection, wireless monitoring and on-screen results.</p>
+      <p class="work__note">First place by audience choice at Mechanical Project Showcasing, Fall 2023.</p>
+      
+    <a class="project-report" href="assets/files/water-quality-report.pdf" target="_blank" rel="noopener">Read the report <span aria-hidden="true">↗</span></a></article>
+<article class="project-card"><div class="project-card-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/></svg><a href="assets/files/bitac-report.pdf" target="_blank" rel="noopener" aria-label="Open report: Industrial attachment at BITAC"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><h3><a href="assets/files/bitac-report.pdf" target="_blank" rel="noopener">Industrial attachment at BITAC</a></h3>
+      
+      <p class="work__spec">Attachment Training Programme &nbsp;·&nbsp; Bangladesh Industrial Technical Assistance Centre</p>
+      <p>Hands-on training in heat treatment, CNC machining, lathe operation, moulding and casting, which built up a working picture of both traditional and advanced manufacturing processes. Served as team leader for the programme.</p>
+      
+    <a class="project-report" href="assets/files/bitac-report.pdf" target="_blank" rel="noopener">Read the report <span aria-hidden="true">↗</span></a></article>
+<article class="project-card"><div class="project-card-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/></svg><a href="assets/files/solar-pv-net-metering.pdf" target="_blank" rel="noopener" aria-label="Open report: 50 kWp grid-connected solar PV plant with net metering"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><h3><a href="assets/files/solar-pv-net-metering.pdf" target="_blank" rel="noopener">50 kWp grid-connected solar PV plant with net metering</a></h3>
+
+<p class="work__spec"><b>ME 4201</b> Power Plant Engineering &nbsp;·&nbsp; NREL System Advisor Model, Global Solar Atlas, SREDA Net Metering Calculator</p>
+<p>Designed a ground-mounted 50 kWp solar plant for a mixed college, shop and household load in Brahmanbaria, from the hourly demand profile and solar resource assessment through to module and inverter sizing, string layout and grid interconnection. Annual yield and system losses were simulated in SAM; net metering savings, payback and avoided emissions were worked out against the SREDA 2025 guideline.</p>
+
+<a class="project-report" href="assets/files/solar-pv-net-metering.pdf" target="_blank" rel="noopener">Read the report <span aria-hidden="true">↗</span></a></article>
+<article class="project-card"><div class="project-card-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Z"/></svg><a href="assets/files/labview-mechatronics.pdf" target="_blank" rel="noopener" aria-label="Open report: LabVIEW instrument for heat, vibration and flow experiments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><h3><a href="assets/files/labview-mechatronics.pdf" target="_blank" rel="noopener">LabVIEW instrument for heat, vibration and flow experiments</a></h3>
+
+<p class="work__spec"><b>ME 4205</b> Mechatronics &nbsp;·&nbsp; LabVIEW</p>
+<p>Built one LabVIEW program covering three experiments: sensible heat exchange with absorbed and released indicators, two-signal vibration analysis with FFT and power spectral density, and pipe flow with Reynolds-based laminar, transitional and turbulent classification. The flow panel flags results above Re 25000, where the laminar solution no longer holds.</p>
+<p class="work__team"> Supervised by Dr. Qazi Talal, Assistant Professor, Department of Mechanical and Production Engineering.</p>
+
+<a class="project-report" href="assets/files/labview-mechatronics.pdf" target="_blank" rel="noopener">Read the report <span aria-hidden="true">↗</span></a></article></div></section>
+
+    <section class="section background" id="background" aria-labelledby="background-title"><h2 id="background-title">Beyond the Simulations</h2><p class="section-subtitle">The education, tools and experiences behind my work.</p><div class="background-list">
+      <details class="background-item" id="academics"><summary><span>Education<small>AUST · Milestone College · Al Helal</small></span><span class="plus" aria-hidden="true">+</span></summary><div class="background-content"><ol class="edu">
       <li class="edu__item">
         <div class="edu__logo"><img src="assets/img/aust.png" alt="AUST" loading="lazy" decoding="async"></div>
         <div class="edu__body">
@@ -244,281 +340,8 @@
           </dl>
         </div>
       </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ---------- PROJECTS ---------- -->
-<section class="page" id="projects">
-  <header class="banner">
-    <h1>Projects</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
-
-  <div class="wrap">
-    <p class="lead">Coursework and training projects in machine design, instrumentation and manufacturing.</p>
-
-    <article class="work">
-      <h2>Gear train for a rotary screw compressor</h2>
-      <p class="work__spec"><b>ME 3201</b> Machine Design &nbsp;·&nbsp; ANSYS Workbench 2021 R2, Autodesk Inventor, SolidWorks</p>
-      <p>Designed and analysed the gear train driving a rotary screw compressor, from ratio selection and tooth geometry through to stress checks on the loaded members.</p>
-      <a class="doclink" href="assets/files/gear-train.pdf" data-optional target="_blank" rel="noopener">Open the report</a>
-    </article>
-
-    <article class="work">
-      <h2>Belt drive for the starter motor of a car engine</h2>
-      <p class="work__spec"><b>ME 3202</b> Machine Design Sessional &nbsp;·&nbsp; ANSYS Workbench 2021 R2, SolidWorks</p>
-      <p>Sized a belt drive for a starter motor, covering pulley geometry, belt selection, tension and power transmission, with CAD and FEA support.</p>
-      <p class="work__team">With Jubaida Hossain Basoti, Eyaman Islam and Rakibul Hasan Shawon. Supervised by Mr. Nasim Mia, Lecturer, Department of Mechanical and Production Engineering.</p>
-      <a class="doclink" href="assets/files/belt-drive.pdf" data-optional target="_blank" rel="noopener">Open the report</a>
-    </article>
-
-    <article class="work">
-      <h2>Real-time water quality monitoring system</h2>
-      <p class="work__spec"><b>ME 3110</b> Instrumentation &amp; Measurement Sessional &nbsp;·&nbsp; Arduino IDE, SolidWorks</p>
-      <p>Built an Arduino Uno system with pH, turbidity, TDS and temperature sensors to judge water safety for drinking, agriculture and environmental use. The build handled automated data collection, wireless monitoring and on-screen results.</p>
-      <p class="work__note">First place by audience choice at Mechanical Project Showcasing, Fall 2023.</p>
-      <a class="doclink" href="assets/files/water-quality-report.pdf" data-optional target="_blank" rel="noopener">Open the report</a>
-    </article>
-
-    <article class="work">
-      <h2>Industrial attachment at BITAC</h2>
-      <p class="work__spec">Attachment Training Programme &nbsp;·&nbsp; Bangladesh Industrial Technical Assistance Centre</p>
-      <p>Hands-on training in heat treatment, CNC machining, lathe operation, moulding and casting, which built up a working picture of both traditional and advanced manufacturing processes. Served as team leader for the programme.</p>
-      <a class="doclink" href="assets/files/bitac-report.pdf" data-optional target="_blank" rel="noopener">Open the report</a>
-    </article>
-    <article class="work">
-<h2>50 kWp grid-connected solar PV plant with net metering</h2>
-<p class="work__spec"><b>ME 4201</b> Power Plant Engineering &nbsp;·&nbsp; NREL System Advisor Model, Global Solar Atlas, SREDA Net Metering Calculator</p>
-<p>Designed a ground-mounted 50 kWp solar plant for a mixed college, shop and household load in Brahmanbaria, from the hourly demand profile and solar resource assessment through to module and inverter sizing, string layout and grid interconnection. Annual yield and system losses were simulated in SAM; net metering savings, payback and avoided emissions were worked out against the SREDA 2025 guideline.</p>
-<a class="doclink" href="assets/files/solar-pv-net-metering.pdf" data-optional target="_blank" rel="noopener">Open the report</a>
-</article>
-<article class="work">
-<h2>LabVIEW instrument for heat, vibration and flow experiments</h2>
-<p class="work__spec"><b>ME 4205</b> Mechatronics &nbsp;·&nbsp; LabVIEW</p>
-<p>Built one LabVIEW program covering three experiments: sensible heat exchange with absorbed and released indicators, two-signal vibration analysis with FFT and power spectral density, and pipe flow with Reynolds-based laminar, transitional and turbulent classification. The flow panel flags results above Re 25000, where the laminar solution no longer holds.</p>
-<p class="work__team"> Supervised by Dr. Qazi Talal, Assistant Professor, Department of Mechanical and Production Engineering.</p>
-<a class="doclink" href="assets/files/labview-mechatronics.pdf" data-optional target="_blank" rel="noopener">Open the report</a>
-</article>
-  </div>
-</section>
-
-<!-- ---------- RESEARCH ---------- -->
-<section class="page" id="research">
-  <header class="banner">
-    <h1>Research</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
-
-  <div class="wrap">
-    <p class="lead">Numerical studies in thermal energy storage, building energy and multiphase heat transfer using ANSYS Fluent and OpenFOAM, alongside experimental work on natural-fibre composites. The numerical studies include model validation against published research.</p>
-
-    <article class="work" id="research-pcm">
-      <p class="work__spec">Thermal energy storage · Numerical validation</p>
-      <h2>Modelling solid–liquid phase change for thermal energy storage</h2>
-      <p><strong>Research focus:</strong> The thermal behaviour of phase change materials during charging and discharging, and the effect of model parameters on heat transfer.</p>
-      <ul class="ticks">
-        <li><strong>Approach:</strong> CFD modelling of charging and discharging, with parametric analysis of heat transfer.</li>
-        <li><strong>Validation:</strong> Comparison of the predicted liquid fraction over time with Alnakeeb et al. <a href="#ref-1">[1]</a>.</li>
-        <li><strong>Related benchmark:</strong> Consecutive charging and discharging with modified longitudinal fins <a href="#ref-2">[2]</a>.</li>
-      </ul>
-      <figure class="film research-figure">
-        <a class="film__box" href="assets/img/sl-v.png" target="_blank" rel="noopener" aria-label="Open full-size liquid fraction validation plot">
-          <img src="assets/img/sl-v.png" alt="Liquid fraction against time, present study compared with Alnakeeb et al." loading="lazy" decoding="async">
-        </a>
-        <figcaption>Figure 1. Liquid-fraction evolution compared with Alnakeeb et al. <a href="#ref-1">[1]</a>. Select the plot to inspect it at full size.</figcaption>
-      </figure>
-    </article>
-    <article class="work" id="research-plaster">
-      <p class="work__spec">Building energy · Numerical validation</p>
-      <h2>Solid–solid phase change materials in building plaster</h2>
-      <p><strong>Research focus:</strong> The thermal response and energy-saving potential of plaster containing solid–solid phase change materials.</p>
-      <ul class="ticks">
-        <li><strong>Approach:</strong> Heat transfer simulations of composite PCM-loaded plaster under varying boundary conditions.</li>
-        <li><strong>Validation:</strong> Comparison of the predicted temperature history with the study by Farulla et al. <a href="#ref-3">[3]</a>.</li>
-      </ul>
-      <figure class="film research-figure">
-        <a class="film__box" href="assets/img/ss-v.png" target="_blank" rel="noopener" aria-label="Open full-size temperature validation plot">
-          <img src="assets/img/ss-v.png" alt="Temperature against time, present study compared with Farulla et al." loading="lazy" decoding="async">
-        </a>
-        <figcaption>Figure 2. Temperature history compared with Farulla et al. <a href="#ref-3">[3]</a>. Select the plot to inspect it at full size.</figcaption>
-      </figure>
-    </article>
-
-    <article class="work" id="research-droplets">
-      <p class="work__spec">Multiphase flow · Work in progress · ANSYS Fluent &amp; OpenFOAM</p>
-      <h2>Free-falling droplets and freezing</h2>
-      <p><strong>Research focus:</strong> Droplet deformation and heat transfer during free fall, impact and freezing.</p>
-      <ul class="ticks">
-        <li><strong>Approach:</strong> Volume of Fluid simulations to track droplet shape and investigate thermal behaviour.</li>
-        <li><strong>Reference studies:</strong> Falling-droplet deformation <a href="#ref-4">[4]</a>, paired-droplet impact <a href="#ref-5">[5]</a>, and impact with freezing <a href="#ref-6">[6]</a>.</li>
-      </ul>
-
-      <!-- Validation picture: reference [4] -->
-      <section class="validation-study" aria-labelledby="validation-ref4-heading">
-        <h3 id="validation-ref4-heading">Falling-droplet deformation and collision</h3>
-        <p>This figure compares my numerical results with <cite>Two-dimensional analogies to the deformation characteristics of a falling droplet and its collision</cite> by A. H. Rafi, M. R. Haque and D. H. Ahmed (2022) <a href="#ref-4">[4]</a>. The comparison is used to assess the simulation's representation of droplet deformation and collision behaviour.</p>
-        <figure class="film research-figure">
-          <a class="film__box" href="assets/img/validation-ref4.png" target="_blank" rel="noopener" aria-label="Open full-size validation picture for reference 4">
-            <img src="assets/img/validation-ref4.png" alt="Numerical droplet deformation and collision results compared with Rafi et al., reference 4" loading="lazy" decoding="async">
-          </a>
-          <figcaption>Figure 3. Droplet deformation and collision: comparison with Rafi et al. <a href="#ref-4">[4]</a>. Select the image to inspect it at full size.</figcaption>
-        </figure>
-      </section>
-
-      <!-- Validation picture: reference [5] -->
-      <section class="validation-study" aria-labelledby="validation-ref5-heading">
-        <h3 id="validation-ref5-heading">Simultaneous droplet-pair impact</h3>
-        <p>This figure compares my numerical results with <cite>Simultaneous impact of droplet pairs on solid surfaces</cite> by A. Goswami and Y. Hardalupas (2023) <a href="#ref-5">[5]</a>. The reference study provides a benchmark for assessing droplet-pair impact and the resulting deformation on a solid surface.</p>
-        <figure class="film research-figure">
-          <a class="film__box" href="assets/img/validation-ref5.png" target="_blank" rel="noopener" aria-label="Open full-size validation picture for reference 5">
-            <img src="assets/img/validation-ref5.png" alt="Numerical droplet-pair impact results compared with Goswami and Hardalupas, reference 5" loading="lazy" decoding="async">
-          </a>
-          <figcaption>Figure 4. Simultaneous droplet-pair impact: comparison with Goswami and Hardalupas <a href="#ref-5">[5]</a>. Select the image to inspect it at full size.</figcaption>
-        </figure>
-      </section>
-    </article>
-<article class="work" id="research-pcm">
-      <p class="work__spec">Thermal energy storage · Numerical validation</p>
-      <h2>Modelling solid–liquid phase change for thermal energy storage</h2>
-      <p><strong>Research focus:</strong> The thermal behaviour of phase change materials during charging and discharging, and the effect of model parameters on heat transfer.</p>
-      <ul class="ticks">
-        <li><strong>Approach:</strong> Transient CFD simulation using a
-      2D axisymmetric domain, the solidification and melting model,
-      and the Boussinesq approximation in ANSYS Fluent.</li>
-
-    <li><strong>Benchmark comparison:</strong> Comparison of the
-      volume-averaged PCM liquid fraction over time with Figure 4
-      of Al Siyabi et al. <a href="#ref-7">[7]</a>.</li>
-
-    <li><strong>Current results:</strong> The available simulation
-      results show a similar melting trend to the published curve.
-      Assessment of the complete melting history and numerical
-      sensitivity remains ongoing.</li>
-      </ul>
-      <figure class="film research-figure">
-        <a class="film__box" href="assets/img/k1.png" target="_blank" rel="noopener" aria-label="Open full-size liquid fraction validation plot">
-          <img src="assets/img/k1.png" alt="Liquid fraction against time, present study compared with I. Al Siyabi et al." loading="lazy" decoding="async">
-        </a>
-        <figcaption>Figure 5. Liquid-fraction evolution compared with I. Al Siyabi et al. <a href="#ref-1">[7]</a>. Select the plot to inspect it at full size.</figcaption>
-      </figure>
-    </article>
-    <article class="work" id="research-composites">
-      <p class="work__spec">Undergraduate thesis · Experimental research · Completed July 2026</p>
-      <h2>Water-lily natural fibre and epoxy composites</h2>
-      <p><strong>Thesis:</strong> Experimental Characterization of Nymphaea Rubra (Water Lily) Natural Fiber and Its Epoxy Composite through Mechanical Analysis.</p>
-      <p class="work__team">AUST · Supervisor: Dr. Fazle Rabbi · Three-member research team</p>
-      <p><strong>Research focus:</strong> Water-lily natural fibre as a sustainable reinforcement for epoxy-based polymer composites.</p>
-      <ul class="ticks">
-        <li><strong>Extraction:</strong> Compared 48-hour and 72-hour natural retting, with and without 6% NaOH treatment.</li>
-        <li><strong>Methods:</strong> Single-fibre tensile testing, hand lay-up fabrication, laser-cut specimens, and tensile, flexural, Charpy impact and Brinell hardness tests, with SEM examination.</li>
-        <li><strong>Reported results:</strong> Identified 48-hour natural retting as the most effective extraction condition among those studied. Average composite tensile strength was 25.5 ± 2 MPa, elastic modulus 3.2 ± 0.29 GPa, and flexural strength 22 ± 5.5 MPa.</li>
-      </ul>
-      <a class="doclink" href="#showcase" data-page="showcase">View laboratory photographs &rarr;</a>
-    </article>
-  <h2 class="block__title">Reference literature for numerical studies</h2>
-  <p class="section-intro">Published studies used as benchmarks and background for the work above.</p>
-  <ol class="pubs">
-    <li id="ref-1">
-      <p class="pub__title">Eccentricity optimization of an inner flat-tube double-pipe latent-heat thermal energy storage unit</p>
-      <p class="pub__meta">M.A. Alnakeeb, M.A. Abdel Salam, M.A. Hassab · Case Studies in Thermal Engineering 25 (2021), 100969.</p>
-      <a class="doclink" href="https://doi.org/10.1016/j.csite.2021.100969" target="_blank" rel="noopener">View on publisher site</a>
-    </li>
-    <li id="ref-2">
-      <p class="pub__title">Numerical investigation on consecutive charging and discharging of PCM with modified longitudinal fins in shell and tube thermal energy storage</p>
-      <p class="pub__meta">M.K. Fahad, N.F. Ifraj, M.R. Haque, N.M. Chowdhury, F.-T. Zohora, Results in Engineering 24 (2024) 103577.</p>
-      <a class="doclink" href="https://doi.org/10.1016/j.rineng.2024.103577" target="_blank" rel="noopener">View on publisher site</a>
-    </li>
-    <li id="ref-3">
-      <p class="pub__title">Experiments and Modeling of Solid–Solid Phase Change Material-Loaded Plaster to Enhance Building Energy Efficiency</p>
-      <p class="pub__meta">G.A. Farulla, V. Brancato, V. Palomba, Y. Zhang, G.E. Dino, A. Frazzica, Energies 16 (5) (2023) 2384. </p>
-      <a class="doclink" href="https://doi.org/10.3390/en16052384" target="_blank" rel="noopener">View on publisher site</a>
-    </li>
-    <li id="ref-4">
-      <p class="pub__title">Two-dimensional analogies to the deformation characteristics of a falling droplet and its collision</p>
-      <p class="pub__meta">A. H. Rafi, M. R. Haque, and D. H. Ahmed, Archive of Mechanical Engineering, vol. 69, no. 1, pp. 21–43, 2022,</p>
-      <a class="doclink" href="https://doi.org/10.24425/AME.2021.139649" target="_blank" rel="noopener">View on publisher site</a>
-    </li>
-    <li id="ref-5">
-      <p class="pub__title">Simultaneous impact of droplet pairs on solid surfaces,</p>
-      <p class="pub__meta">A. Goswami and Y. Hardalupas, Journal of Fluid Mechanics, vol. 961, Apr. 2023</p>
-      <a class="doclink" href="https://doi.org/10.1017/JFM.2023.249" target="_blank" rel="noopener">View on publisher site</a>
-    </li>
-    <li id="ref-6">
-      <p class="pub__title">Impacting-freezing dynamics of a supercooled water droplet on a cold surface: Rebound and adhesion</p>
-      <p class="pub__meta">X. Zhang, X. Liu, X. Wu, and J. Min, International Journal of Heat and Mass Transfer, vol. 158, p. 119997, Sep. 2020, </p>
-      <a class="doclink" href="https://doi.org/10.1016/J.IJHEATMASSTRANSFER.2020.119997" target="_blank" rel="noopener">View on publisher site</a>
-    </li>
-    <li id="ref-7"> 
-      <p class="pub__title">An experimental and numerical study on the effect of inclination angle of phase change materials thermal energy storage system</strong></p>
-      <p class="pub__meta">I. Al Siyabi, S. Khanna, T. Mallick and S. Sundaram.
-    Journal of Energy Storage, 23 (2019), 57–68.</p>
-      <a class="doclink" href="https://doi.org/10.1016/j.est.2019.03.010"
-     target="_blank" rel="noopener">View on publisher site</a>
-    </li>
-  </ol>
-  </div>
-</section>
-
-<!-- ---------- VIDEOS ---------- -->
-<section class="page" id="videos">
-  <header class="banner">
-    <h1>Research &amp; project videos</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
-  <div class="wrap">
-    <p class="lead">Simulation animations, laboratory work and project demonstrations.</p>
-    <div class="video-grid" id="video-gallery"></div>
-    <p id="videos-empty">Videos will be added here as they become available.</p>
-  </div>
-</section>
-
-<!-- ---------- CREDENTIALS ---------- -->
-<section class="page" id="credentials">
-  <header class="banner">
-    <h1>Credentials</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
-
-  <div class="wrap">
-    <article class="cert">
-      <div class="cert__body">
-        <h2>MATLAB Onramp</h2>
-        <p class="cert__by">MathWorks Training Services · 26 December 2024</p>
-        <p>Hands-on practice in matrix manipulation, scripting, automation, data visualisation and control structures, which laid the groundwork for computational analysis and engineering simulation.</p>
-      </div>
-      <div class="cert__shot"><img src="assets/img/matlab.png" alt="MATLAB Onramp certificate" loading="lazy" decoding="async"></div>
-    </article>
-
-    <article class="cert">
-      <div class="cert__body">
-        <h2>Water quality monitoring system, first place</h2>
-        <p class="cert__by">AUST Mechanical Society · Mechanical Project Showcasing, Fall 2023</p>
-        <p>Certificate of appreciation for the Arduino-based water quality monitoring system, which took first position by audience choice.</p>
-      </div>
-      <div class="cert__shot"><img src="assets/img/me.JPG" alt="Certificate of appreciation" loading="lazy" decoding="async"></div>
-    </article>
-
-    <article class="cert">
-      <div class="cert__body">
-        <h2>Industrial attachment training programme</h2>
-        <p class="cert__by">BITAC, Ministry of Industries, Government of Bangladesh · March 2024</p>
-        <p>Completed the attachment training programme as team leader, which sharpened technical and analytical skills alongside coordination and decision-making.</p>
-      </div>
-      <div class="cert__shot"><img src="assets/img/bitac.JPG" alt="BITAC certificate" loading="lazy" decoding="async"></div>
-    </article>
-  </div>
-</section>
-
-<!-- ---------- SKILLS ---------- -->
-<section class="page" id="skills">
-  <header class="banner">
-    <h1>Skills &amp; competencies</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
-
-  <div class="wrap">
-    <section class="block">
+    </ol></div></details>
+      <details class="background-item" id="skills"><summary><span>Methods & skills<small>Simulation, CAD, programming & research</small></span><span class="plus" aria-hidden="true">+</span></summary><div class="background-content"><section class="block">
       <h2 class="block__title">Software</h2>
       <div class="skills">
         <div class="skill">
@@ -604,39 +427,43 @@
           </ul>
         </div>
       </div>
-    </section>
-  </div>
-</section>
+    </section></div></details>
+      <details class="background-item" id="credentials"><summary><span>Credentials<small>Training & certifications</small></span><span class="plus" aria-hidden="true">+</span></summary><div class="background-content"><article class="cert">
+      <div class="cert__body">
+        <h2>MATLAB Onramp</h2>
+        <p class="cert__by">MathWorks Training Services · 26 December 2024</p>
+        <p>Hands-on practice in matrix manipulation, scripting, automation, data visualisation and control structures, which laid the groundwork for computational analysis and engineering simulation.</p>
+      </div>
+      <div class="cert__shot"><img src="assets/img/matlab.png" alt="MATLAB Onramp certificate" loading="lazy" decoding="async"></div>
+    </article>
 
-<!-- ---------- SHOWCASE ---------- -->
-<section class="page" id="showcase">
-  <header class="banner">
-    <h1>Showcase</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
+    <article class="cert">
+      <div class="cert__body">
+        <h2>Water quality monitoring system, first place</h2>
+        <p class="cert__by">AUST Mechanical Society · Mechanical Project Showcasing, Fall 2023</p>
+        <p>Certificate of appreciation for the Arduino-based water quality monitoring system, which took first position by audience choice.</p>
+      </div>
+      <div class="cert__shot"><img src="assets/img/me.JPG" alt="Certificate of appreciation" loading="lazy" decoding="async"></div>
+    </article>
 
-  <div class="wrap">
-    <p class="lead">Contours, meshes and plots from simulation and laboratory work.</p>
+    <article class="cert">
+      <div class="cert__body">
+        <h2>Industrial attachment training programme</h2>
+        <p class="cert__by">BITAC, Ministry of Industries, Government of Bangladesh · March 2024</p>
+        <p>Completed the attachment training programme as team leader, which sharpened technical and analytical skills alongside coordination and decision-making.</p>
+      </div>
+      <div class="cert__shot"><img src="assets/img/bitac.JPG" alt="BITAC certificate" loading="lazy" decoding="async"></div>
+    </article></div></details>
+      <details class="background-item" id="showcase"><summary><span>Inside the laboratory<small>Fibre testing, specimens & microscopy</small></span><span class="plus" aria-hidden="true">+</span></summary><div class="background-content"><p class="lead">Contours, meshes and plots from simulation and laboratory work.</p>
     <div class="gallery">
-      <figure><div class="shot"><img src="assets/img/a3.png" alt="Tensile testing of a fibre specimen" loading="lazy" decoding="async"></div><figcaption>Tensile testing of the fiber</figcaption></figure>
-      <figure><div class="shot"><img src="assets/img/a2.JPG" alt="Microscope examination of a fibre specimen" loading="lazy" decoding="async"></div><figcaption>Microscope analysis of the fiber </figcaption></figure>
-      <figure><div class="shot"><img src="assets/img/x29.jpeg" alt="Specimen prepared for a bending test" loading="lazy" decoding="async"></div><figcaption>Bending specimen.</figcaption></figure>
-      <figure><div class="shot"><img src="assets/img/x30.jpeg" alt="Specimen prepared for a tensile test" loading="lazy" decoding="async"></div><figcaption>UTS specimen.</figcaption></figure>
-      <figure><div class="shot"><img src="assets/img/x31.jpeg" alt="Specimen after a tensile test" loading="lazy" decoding="async"></div><figcaption>After test specimen(UTS).</figcaption></figure>
-      <figure><div class="shot"><img src="assets/img/x32.jpeg" alt="Specimen after a bending test" loading="lazy" decoding="async"></div><figcaption>After test specimen(Bending).</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- ---------- ACHIEVEMENTS ---------- -->
-<section class="page" id="achievements">
-  <header class="banner">
-    <h1>Achievements</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
-
-  <div class="wrap">
-    <article class="award">
+      <figure><a class="shot" href="assets/img/a3.png" data-lightbox><img src="assets/img/a3.png" alt="Tensile testing of a fibre specimen" loading="lazy" decoding="async"></a><figcaption>Tensile testing of the fiber</figcaption></figure>
+      <figure><a class="shot" href="assets/img/a2.JPG" data-lightbox><img src="assets/img/a2.JPG" alt="Microscope examination of a fibre specimen" loading="lazy" decoding="async"></a><figcaption>Microscope analysis of the fiber </figcaption></figure>
+      <figure><a class="shot" href="assets/img/x29.jpeg" data-lightbox><img src="assets/img/x29.jpeg" alt="Specimen prepared for a bending test" loading="lazy" decoding="async"></a><figcaption>Bending specimen.</figcaption></figure>
+      <figure><a class="shot" href="assets/img/x30.jpeg" data-lightbox><img src="assets/img/x30.jpeg" alt="Specimen prepared for a tensile test" loading="lazy" decoding="async"></a><figcaption>UTS specimen.</figcaption></figure>
+      <figure><a class="shot" href="assets/img/x31.jpeg" data-lightbox><img src="assets/img/x31.jpeg" alt="Specimen after a tensile test" loading="lazy" decoding="async"></a><figcaption>After test specimen(UTS).</figcaption></figure>
+      <figure><a class="shot" href="assets/img/x32.jpeg" data-lightbox><img src="assets/img/x32.jpeg" alt="Specimen after a bending test" loading="lazy" decoding="async"></a><figcaption>After test specimen(Bending).</figcaption></figure>
+    </div></div></details>
+      <details class="background-item" id="achievements"><summary><span>Achievements<small>First place · People’s Choice Award</small></span><span class="plus" aria-hidden="true">+</span></summary><div class="background-content"><article class="award">
       <div class="award__shot"><img src="assets/img/a1.JPG" alt="Receiving the People's Choice award" loading="lazy" decoding="async"></div>
       <div class="award__body">
         <h2>First place, People's Choice Award</h2>
@@ -648,242 +475,22 @@
     <section class="block">
       <h2 class="block__title">The team behind it</h2>
       <div class="team">
-        <figure><div class="shot"><img src="assets/img/a4.png" alt="Project team at the showcase" loading="lazy" decoding="async"></div></figure>
-        <figure><div class="shot"><img src="assets/img/a5.png" alt="Project team with the demonstration rig" loading="lazy" decoding="async"></div></figure>
+        <figure><a class="shot" href="assets/img/a4.png" data-lightbox><img src="assets/img/a4.png" alt="Project team at the showcase" loading="lazy" decoding="async"></a></figure>
+        <figure><a class="shot" href="assets/img/a5.png" data-lightbox><img src="assets/img/a5.png" alt="Project team with the demonstration rig" loading="lazy" decoding="async"></a></figure>
       </div>
-    </section>
-  </div>
-</section>
-
-<!-- ---------- PUBLICATIONS ---------- -->
-<section class="page" id="publications">
-  <header class="banner">
-    <h1>Publications</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
-
-  <div class="wrap">
-    <div class="empty">
+    </section></div></details>
+      <details class="background-item" id="publications"><summary><span>Publications<small>Manuscripts in preparation</small></span><span class="plus" aria-hidden="true">+</span></summary><div class="background-content"><div class="empty">
       <h2>Manuscripts in preparation</h2>
       <p>Manuscripts from the phase change material and composite work are in preparation. Journal and conference papers will appear here once published.</p>
-      <a class="btn btn--solid" href="#contact" data-page="contact">Get in touch about the work</a>
+      <a class="btn btn--solid" href="#contact">Get in touch about the work</a>
     </div>
 
-    <!-- Copy this block for each paper and delete the comment markers.
-    <ol class="pubs">
-      <li>
-        <p class="pub__title">Title of the paper</p>
-        <p class="pub__meta">Authors · Journal or conference, year · DOI</p>
-        <a class="doclink" href="https://doi.org/xxxxx" target="_blank" rel="noopener">Read the paper</a>
-      </li>
-    </ol>
-    -->
-  </div>
-</section>
+    </div></details>
+    </div></section>
 
-<!-- ---------- CONTACT ---------- -->
-<section class="page" id="contact">
-  <header class="banner">
-    <h1>Contact</h1>
-    <div class="scale" aria-hidden="true"></div>
-  </header>
-
-  <div class="wrap">
-    <p class="lead">Open to research collaboration and graduate study in fluid dynamics, thermal sciences and computational modelling.</p>
-
-    <ul class="contact">
-      <li>
-        <span class="contact__k">Personal Email</span>
-        <a href="mailto:meherabhossen3085@gmail.com">meherabhossen3085@gmail.com</a>
-      </li>
-           <li>
-        <span class="contact__k">Current role</span>
-        <span>CFD Simulation Engineer (Remote), MACPROTEC, USA</span>
-              </li>
-       <li>
-         <span class="contact__k">Work Email</span>
-       <a href="mailto:Meherab.Hossen@MACPROTECENG.com">Meherab.Hossen@MACPROTECENG.com</a>
-      </li>
-      <li>
-        <span class="contact__k">ResearchGate</span>
-        <a href="https://www.researchgate.net/profile/Md-Meherab-Hossen?ev=hdr_xprf" target="_blank" rel="noopener">Md. Meherab Hossen</a>
-      </li>
-      <li>
-        <span class="contact__k">Location</span>
-        <span>Dhaka, Bangladesh</span>
-      </li>
-    </ul>
-    <a class="btn btn--solid" href="https://mail.google.com/mail/?view=cm&fs=1&to=mirajopi@gmail.com&su=Enquiry%20from%20your%20portfolio" target="_blank" rel="noopener">Send an email</a>
-  </div>
-</section>
-
-<footer class="foot">
-  <p>&copy; <span class="year">2026</span> Md. Meherab Hossen. All rights reserved.</p>
-</footer>
-
-</main>
-
-<script>
-/* EDIT YOUR VIDEO LIST HERE.
-   Add MP4 or YouTube entries between the square brackets below.
-   See README.md for copy-and-paste examples.
-   The Videos menu appears after you add at least one valid entry.
-*/
-window.PORTFOLIO_VIDEOS = [
-  {
-    "type": "mp4",
-    "title": "Droplet-pair impact: validation against reference [5]",
-    "src": "assets/videos/meherab.MP4",
-    "description": "This video presents my numerical validation work based on Simultaneous impact of droplet pairs on solid surfaces by A. Goswami and Y. Hardalupas (2023), listed as reference [5]. The study serves as the benchmark for comparing droplet-impact behaviour in my simulation.",
-    "reference": "ref-5"
-  },
-  {
-    "type": "mp4",
-    "title": "Two-dimensional analogies to the deformation characteristics of a falling droplet and its collision [4]",
-    "src": "assets/videos/meherab1.mp4",
-    "description": "This video presents my numerical validation work based on Two-dimensional analogies to the deformation characteristics of a falling droplet and its collision by A. H. Rafi, M. R. Haque, and D. H. Ahmed (2022), listed as reference [4]. The study serves as a benchmark for examining droplet deformation and collision behaviour in my simulation.",
-    "reference": "ref-4"
-  }
-];
-</script>
-<script>
-(function () {
-  'use strict';
-
-  var gallery = document.getElementById('video-gallery');
-  var empty = document.getElementById('videos-empty');
-  var entries = Array.isArray(window.PORTFOLIO_VIDEOS) ? window.PORTFOLIO_VIDEOS : [];
-  if (!gallery) return;
-
-  function mediaURL(value) {
-    if (typeof value !== 'string' || !value.trim()) return null;
-    try {
-      var url = new URL(value, document.baseURI);
-      if (url.protocol === 'https:' || url.protocol === 'http:' ||
-          (location.protocol === 'file:' && url.protocol === 'file:')) return url.href;
-    } catch (err) {}
-    return null;
-  }
-
-  function element(tag, className, text) {
-    var node = document.createElement(tag);
-    if (className) node.className = className;
-    if (text) node.textContent = text;
-    return node;
-  }
-
-  entries.forEach(function (entry) {
-    if (!entry || typeof entry.title !== 'string' || !entry.title.trim()) return;
-    var youtube = entry.type === 'youtube' && /^[A-Za-z0-9_-]{11}$/.test(entry.id || '');
-    var file = entry.type === 'mp4' && mediaURL(entry.src);
-    if (!youtube && !file) return;
-
-    var card = element('article', 'video-card');
-    var frame = element('div', 'video-frame');
-    var body = element('div', 'video-card__body');
-    var heading = element('h2', '', entry.title);
-    var poster = mediaURL(entry.poster);
-
-    if (youtube) {
-      // YouTube is contacted only when the visitor chooses Play.
-      var play = element('button', 'video-play');
-      play.type = 'button';
-      play.setAttribute('aria-label', 'Play ' + entry.title + ' on YouTube');
-      if (poster) {
-        var thumbnail = element('img');
-        thumbnail.src = poster;
-        thumbnail.alt = '';
-        thumbnail.loading = 'lazy';
-        play.appendChild(thumbnail);
-      }
-      play.appendChild(element('span', 'video-play__label', 'Play video on YouTube'));
-      play.addEventListener('click', function () {
-        var iframe = element('iframe');
-        iframe.title = entry.title;
-        iframe.src = 'https://www.youtube-nocookie.com/embed/' + entry.id + '?autoplay=1';
-        iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-        iframe.allowFullscreen = true;
-        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-        frame.replaceChildren(iframe);
-        iframe.focus();
-      });
-      frame.addEventListener('portfolio-video-stopped', function () {
-        if (frame.querySelector('iframe')) frame.replaceChildren(play);
-      });
-      frame.appendChild(play);
-
-      var watch = element('a', 'doclink', 'Watch on YouTube');
-      watch.href = 'https://www.youtube.com/watch?v=' + entry.id;
-      watch.target = '_blank';
-      watch.rel = 'noopener';
-      body.appendChild(watch);
-    } else {
-      var video = element('video');
-      video.controls = true;
-      video.preload = 'metadata';
-      video.playsInline = true;
-      video.setAttribute('aria-label', entry.title);
-      video.src = file;
-      if (poster) video.poster = poster;
-      var captions = mediaURL(entry.captions);
-      if (captions) {
-        var track = element('track');
-        track.kind = 'captions';
-        track.src = captions;
-        track.srclang = entry.language || 'en';
-        track.label = entry.captionLabel || 'English';
-        track.default = true;
-        video.appendChild(track);
-      }
-      var fallback = element('p', 'video-message', 'The video could not load. Please try again later.');
-      fallback.hidden = true;
-      fallback.setAttribute('role', 'status');
-      video.addEventListener('error', function () { fallback.hidden = false; });
-      video.addEventListener('loadeddata', function () { fallback.hidden = true; });
-      frame.appendChild(video);
-      body.appendChild(fallback);
-      // The native controls play the MP4 inside this section.
-    }
-
-    body.prepend(heading);
-    if (typeof entry.description === 'string' && entry.description.trim()) {
-      heading.after(element('p', '', entry.description));
-    }
-    if (typeof entry.reference === 'string' && /^ref-\d+$/.test(entry.reference) && document.getElementById(entry.reference)) {
-      var reference = element('a', 'doclink', 'View reference [' + entry.reference.slice(4) + ']');
-      reference.href = '#' + entry.reference;
-      body.appendChild(reference);
-    }
-    card.appendChild(frame);
-    card.appendChild(body);
-    gallery.appendChild(card);
-  });
-
-  var hasVideos = gallery.childElementCount > 0;
-  empty.hidden = hasVideos;
-  document.querySelectorAll('[data-video-nav]').forEach(function (item) { item.hidden = !hasVideos; });
-
-  // Pause local video playback when the visitor changes portfolio sections.
-  function pauseVideos() {
-    gallery.querySelectorAll('video').forEach(function (video) { video.pause(); });
-    gallery.querySelectorAll('iframe').forEach(function (iframe) {
-      // Remove the player to stop audio; show its original Play button again.
-      var frame = iframe.parentElement;
-      frame.dispatchEvent(new Event('portfolio-video-stopped'));
-    });
-  }
-  document.addEventListener('click', function (event) {
-    var link = event.target.closest && event.target.closest('a[href^="#"]');
-    if (link && link.hash !== '#videos' && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
-      pauseVideos();
-    }
-  });
-  window.addEventListener('hashchange', function () {
-    if (location.hash !== '#videos') pauseVideos();
-  });
-})();
-
-</script>
-<script src="assets/js/main.js"></script>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title"><p class="eyebrow"><span>04.</span> What’s Next?</p><h2 id="contact-title">Let’s Explore Together.</h2><p>I’m open to graduate study and research collaboration in fluid dynamics, thermal sciences and computational modelling. If our interests intersect, I’d love to hear from you.</p><a class="button" href="mailto:meherabhossen3085@gmail.com">Say Hello</a><div class="contact-details"><a href="mailto:meherabhossen3085@gmail.com">meherabhossen3085@gmail.com</a><a href="mailto:Meherab.Hossen@MACPROTECENG.com">Work: Meherab.Hossen@MACPROTECENG.com</a><span>Dhaka, Bangladesh</span></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-socials"><a href="https://github.com/cfdmeherabhossen" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.4c0-1 .1-1.4-.5-2 3-.3 6.1-1.5 6.1-6.7A5.2 5.2 0 0 0 19.2 6a4.8 4.8 0 0 0-.1-3.9S18 1.8 15 3.6a13.4 13.4 0 0 0-7 0C5 1.8 3.9 2.1 3.9 2.1A4.8 4.8 0 0 0 3.8 6a5.2 5.2 0 0 0-1.4 3.9c0 5.2 3.1 6.4 6.1 6.7-.5.5-.5 1-.5 2V22"/></svg></a><a href="https://www.researchgate.net/profile/Md-Meherab-Hossen" target="_blank" rel="noopener" aria-label="ResearchGate"><span class="researchgate">R<sup>G</sup></span></a><a href="mailto:meherabhossen3085@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a></div><p>Design inspired by <a href="https://brittanychiang.com" target="_blank" rel="noopener">Brittany Chiang</a></p><a href="https://github.com/cfdmeherabhossen/meherab-portfolio" target="_blank" rel="noopener">© <span id="year">2026</span> Md. Meherab Hossen · View source</a></footer>
+  <dialog class="image-dialog" id="image-dialog" aria-label="Full-size research image"><button type="button" class="dialog-close" data-close aria-label="Close image">×</button><img alt=""><p></p></dialog>
 </body>
 </html>
